@@ -6,10 +6,11 @@ import (
 
 var config = npk.Configuration {
     Database: npk.DatabaseConfig {
-        Host: "localhost",
-        Port: "5432",
-        SSLMode: "disabled",
-        Username: "npk",
-        Password: "%npK-s3Kr3T%",
+        Host: "<hostname or IP address",
+        Port: "<port number>",
+        SSLMode: "<enable or disable>",
+        Username: "<username>",
+        Password: "<password>",
+        Catalog: "<catalog name>",
     },
 }
