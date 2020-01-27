@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-    db := npk.DBConnection(config)
+    npk.DBConnection(config)
     r := mux.NewRouter()
     //r.HandleFunc("/", RootHandler)
     npk.SetupRoutes(r)
