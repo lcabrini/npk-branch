@@ -4,11 +4,14 @@ import (
     "fmt"
     "net/http"
     "github.com/gorilla/mux"
+    "github.com/lcabrini/npk-common"
 )
 
 func main() {
+    npk.DBConnection(config)
     r := mux.NewRouter()
-    r.HandleFunc("/", RootHandler)
+    //r.HandleFunc("/", RootHandler)
+    npk.SetupRoutes(r)
     http.ListenAndServe(":8000", r)
 }
 

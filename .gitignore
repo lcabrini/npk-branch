@@ -6,6 +6,9 @@
 *.dylib
 npk-branch
 
+# Configuration
+config.go
+
 # Test binary, built with `go test -c`
 *.test
 
