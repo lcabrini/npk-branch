@@ -13,4 +13,5 @@ var config = npk.Configuration {
         Password: "<password>",
         Catalog: "<catalog name>",
     },
+    SessionKey: "<session key>",
 }
