@@ -21,7 +21,7 @@ func main() {
     r := mux.NewRouter()
     //r.HandleFunc("/", RootHandler)
     npk.SetupRoutes(r)
-    http.ListenAndServe(":8000", r)
+    http.ListenAndServe(config.Listen, r)
 }
 
 // Temporary
